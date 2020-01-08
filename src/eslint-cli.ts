@@ -53,7 +53,7 @@ export async function eslint(filesList: string[]) {
     output: {
       title: CHECK_NAME,
       summary: `${errorCount} error(s), ${warningCount} warning(s) found`,
-      annotations
+      annotations: annotations.slice(0, 50)
     }
   };
 }
